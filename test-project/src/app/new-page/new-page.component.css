@@ -1,0 +1,35 @@
+.main {
+    width: 600px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+}
+
+.column {
+    width: 600px;
+    height: 200px;
+    margin-bottom: 25px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    border: none !important;
+}
+
+.row > div {
+    width: 48%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+.row > div:first-child {
+    margin-right: 4%;
+}
+
+.column:last-child {
+    margin: 0;
+}
