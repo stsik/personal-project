@@ -11,3 +11,48 @@
 <br>
 
 <p>{{String1}} {{String1}}</p>
+
+
+<br>
+<br>
+
+<select [(ngModel)]='first'>
+    <option ngvalue="volvo">Volvo</option>
+    <option ngvalue="saab">Saab</option>
+    <option ngvalue="opel">Opel</option>
+    <option ngvalue="audi">Audi</option>
+</select>
+
+<p><span>You selected: </span><b>{{first}}</b></p>
+
+<button (click)="ChangeValue()">Change</button>
+
+<br>
+<br>
+
+
+<select [(ngModel)]="second">
+  <option ngvalue="volvo">Volvo</option>
+  <option ngvalue="saab">Saab</option>
+  <option ngvalue="opel">Opel</option>
+  <option ngvalue="audi">Audi</option>
+</select>
+
+<p><span>You selected: </span><b>{{second}}</b></p>
+
+
+<br>
+<select>
+  <option *ngFor="let item of tmp" [value]="item"> {{item}}
+
+  </option>
+</select>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<div class='box' *ngIf="showDiv"> </div>
